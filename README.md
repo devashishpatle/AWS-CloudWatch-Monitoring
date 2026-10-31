@@ -149,6 +149,68 @@ I selected **Per-Instance Metrics** to view the monitoring metrics associated wi
 
 ---
 
+## Step 7: Select CPUUtilization Metric
+
+1. Locate your EC2 instance named **MyServer**.
+2. Find the `CPUUtilization` metric in the metrics list.
+3. Select the checkbox next to **CPUUtilization**.
+4. Click the **Select metric** button at the bottom-right corner.
+5. The selected metric will be added to the alarm configuration.
+
+**Description:**
+
+I selected the `CPUUtilization` metric for my EC2 instance `MyServer` to monitor CPU usage and configure an alarm when CPU utilization exceeds 30%.
+![Step 7 - Select CPUUtilization](screenshots/7.png)
+
+---
+
+## Step 8: Configure CPU Utilization Threshold
+
+1. Under the **Statistic** option, select **Average**.
+2. Set the monitoring period to **5 minutes**.
+3. Under the alarm condition, select **Greater**.
+4. Enter **30** as the threshold value.
+5. This configures the alarm to trigger when average CPU utilization exceeds 30%.
+6. Click **Next** to continue.
+
+**Description:**
+
+I configured the CloudWatch alarm condition to monitor average EC2 CPU utilization over a 5-minute period. The alarm will trigger when CPU utilization exceeds 30%.
+![Step 8 - Configure CPU Threshold](screenshots/8.png)
+
+---
+
+## Step 9: Configure Alarm Notifications
+
+1. Under **Alarm state trigger**, select **In alarm**.
+2. Under SNS topic, select **Create new topic**.
+3. Enter the topic name: `Default_CloudWatch_Alarms_Topic`.
+4. Enter your email address to receive alarm notifications.
+5. Click **Create topic** to configure the notification.
+
+**Description:**
+
+I configured Amazon CloudWatch notifications by selecting the **In alarm** state and creating a new SNS topic. I added my email address to receive notifications when EC2 CPU utilization exceeds 30%.
+![Step 9 - Configure Alarm Notifications](screenshots/9.png)
+
+---
+
+## Step 10: Configure Alarm Actions
+
+1. Scroll down to the additional alarm actions section.
+2. Review the available EC2 and Auto Scaling actions.
+3. Click **Next** to proceed to the alarm details.
+
+**Description:**
+
+After configuring the SNS notification topic, I reviewed the additional alarm action options and clicked **Next** to continue with the CloudWatch alarm configuration.
+![Step 10 - Configure Alarm Actions](screenshots/10.png)
+
+---
+
+
+
+
 
 
 
