@@ -210,7 +210,7 @@ After configuring the SNS notification topic, I reviewed the additional alarm ac
 
 ## Step 11: Add Alarm Details
 
-1. Enter the alarm name: `MyServer-High-CPU-Alarm`.
+1. Enter the alarm name: `Hit-Me`.
 2. In the **Alarm description** field, enter: `Triggers when EC2 CPU utilization exceeds 30%.`
 3. Review the alarm details.
 4. Leave the optional Tags section unchanged if not required.
