@@ -223,6 +223,68 @@ I entered the CloudWatch alarm name and description to identify the alarm and sp
 
 ---
 
+## Step 12: Preview and Review Alarm Configuration
+
+1. Review the selected metric namespace: **AWS/EC2**.
+2. Verify the metric name is **CPUUtilization**.
+3. Check that the EC2 instance name is **MyServer**.
+4. Verify the statistic is **Average**.
+5. Confirm the monitoring period is **5 minutes**.
+6. Review the alarm configuration before creating it.
+
+**Description:**
+
+I reviewed the CloudWatch alarm configuration, including the EC2 instance, CPUUtilization metric, average statistic, and 5-minute monitoring period to ensure the settings were correct.
+![Step 12 - Preview Alarm Configuration](screenshots/12.png)
+
+---
+
+## Step 13: Review and Create CloudWatch Alarm
+
+1. Review the notification settings under **Actions**.
+2. Verify the SNS topic is `Default_CloudWatch_Alarms_Topic`.
+3. Review the alarm details.
+4. Click **Create alarm** to create the CloudWatch alarm.
+
+**Description:**
+
+I reviewed the alarm configuration, including the CPU utilization metric, notification topic, and alarm details. Finally, I clicked **Create alarm** to create the EC2 CPU utilization alarm.
+![Step 13 - Create CloudWatch Alarm](screenshots/13.png)
+
+---
+
+## Step 14: Verify Alarm Creation
+
+1. After clicking **Create alarm**, return to the CloudWatch Alarms page.
+2. A success message confirms that the alarm was created successfully.
+3. Verify that the new alarm named **Hit-Me** appears in the alarms list.
+4. Check the current alarm state. It may show **Insufficient data** while CloudWatch collects metric data.
+
+**Description:**
+
+I successfully created the CloudWatch alarm for my EC2 instance. The alarm is now listed in the CloudWatch Alarms dashboard and is ready to monitor CPU utilization against the configured 30% threshold.
+![Step 14 - Alarm Created Successfully](screenshots/14.png)
+
+---
+
+## Step 15: Verify CloudWatch Alarm Status
+
+1. Open the CloudWatch **Overview** dashboard.
+2. Navigate to the **Recent alarms** section.
+3. Locate the alarm named **Hit-Me**.
+4. Verify that the alarm state is **OK** (green).
+5. Check the CPUUtilization graph and confirm that CPU usage is below the 30% threshold.
+
+**Description:**
+
+I verified the CloudWatch alarm on the Overview dashboard. The alarm successfully entered the **OK** state, indicating that the EC2 instance CPU utilization is currently below the configured 30% threshold.
+![Step 15 - CloudWatch Alarm Status](screenshots/15.png)
+
+---
+
+
+
+
 
 
 
