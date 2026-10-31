@@ -208,7 +208,20 @@ After configuring the SNS notification topic, I reviewed the additional alarm ac
 
 ---
 
+## Step 11: Add Alarm Details
 
+1. Enter the alarm name: `MyServer-High-CPU-Alarm`.
+2. In the **Alarm description** field, enter: `Triggers when EC2 CPU utilization exceeds 30%.`
+3. Review the alarm details.
+4. Leave the optional Tags section unchanged if not required.
+5. Continue to the next step.
+
+**Description:**
+
+I entered the CloudWatch alarm name and description to identify the alarm and specify that it monitors EC2 CPU utilization above 30%.
+![Step 11 - Add Alarm Details](screenshots/11.png)
+
+---
 
 
 
